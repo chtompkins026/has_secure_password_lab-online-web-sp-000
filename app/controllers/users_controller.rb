@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   end 
   
  def create
-    @user = User.find_by(username: params[:user][:password])
+    @user = User.find_by(name: params[:user][:password])
     return head(:forbidden) unless @user.authenticate(params[:password])
     session[:user_id] = @user.id
   end
