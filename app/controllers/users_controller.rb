@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     redirect_to :welcome 
     
     else 
-      redirect_to '/login'
+      redirect_to :login
   end
 
 
