@@ -9,15 +9,11 @@ class UsersController < ApplicationController
     if @user.authenticate(params[:user][:password])
       session[:user_id] = @user.id
       redirect_to :welcome 
-    
     else 
+      
       redirect_to :login
     end 
   end
-
-
-  end 
-
 
 
 end
