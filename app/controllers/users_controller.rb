@@ -13,6 +13,12 @@ class UsersController < ApplicationController
       redirect_to :new_user 
     end 
   end 
+  
+  private 
+  
+  def user_params
+    
+  end 
 
 
 end
