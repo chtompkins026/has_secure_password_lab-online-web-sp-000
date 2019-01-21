@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       session[:user_id] = @user.id
       redirect_to :welcome 
     else 
-      flash[:error] = 
+      flash[:error] = "Login is incorrect, please try again"
       redirect_to :login
     end 
   end
